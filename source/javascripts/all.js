@@ -1,3 +1,4 @@
 //= require jquery
-//= require bootstrap-sprockets
+//= require materialize
+//= require jquery-validation
 //= require_tree .

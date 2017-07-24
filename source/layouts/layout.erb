@@ -25,9 +25,10 @@
   </head>
 
   <body class="<%= page_classes %>">
-
-    <%= partial "navbar" %>
-    <%= yield %>
-
+    <main>
+      <%= partial 'partials/navbar' %>
+      <%= yield %>
+    </main>
+    <%= partial 'partials/footer' %>
   </body>
 </html>
