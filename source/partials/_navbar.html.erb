@@ -1,11 +1,22 @@
-<nav class="light-blue darken-2">
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo center hide-on-med-and-down">
-      <%= image_tag 'materialize.svg' %>
-    </a>
-    <ul id="nav" class="tabs tabs-transparent">
-      <li class="tab"><a class="active" href="#intro">INTRO</a></li>
-      <li class="tab"><a href="#livecode">LIVE CODE</a></li>
-    </ul>
-  </div>
-</nav>
+<div class="navbar-fixed">
+  <nav class="light-blue darken-2 ">
+    <div class="nav-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col l3 hide-on-med-and-down">
+            <a href="#" class="brand-logo hide-on-med-and-down">
+              <%= image_tag 'material-logo.svg', style: 'width: 24px' %>
+              <span id="brand-logo-text">Material talk</span>
+            </a>
+          </div>
+          <div class="col s10 offset-s1 m6 offset-m3 l6 offset-l1">
+            <ul id="nav" class="tabs tabs-transparent">
+              <li class="tab"><a class="active" href="#intro">INTRO</a></li>
+              <li class="tab"><a href="#ressources">RESSOURCES</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
