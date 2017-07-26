@@ -1,7 +1,118 @@
 <div class="container">
   <div class="row section">
-    <div class="col s12 m6 offset-m3 center-align">
-      <h3>Materialize</h3>
+    <div class="col s12 center-align">
+      <h3>Materialize-sass</h3>
+    </div>
+  </div>
+  <div class="row section">
+    <div class="col s12 center-align">
+      <h3>Les différences avec bootstrap :</h3>
+    </div>
+  </div>
+  <div class="row section">
+    <div class="col s12 grid-demo grey-text text-lighten-4">
+      <p>Bootstrap : .col-sm12</p>
+      <p>Materialize : .col .s12</p>
+    </div>
+    <div class="col s6 offset-s3 grid-demo grey-text text-lighten-4">
+      <p>Bootstrap : .col-sm6 .offset-sm-3</p>
+      <p>Materialize : .col .s6 .offset-s3</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 center-align">
+      <p>Il est impératif de préciser la taile <span class="code">.s</span> des <span class="code">.col</span>,</p>
+      <p>une <span class="code">.s12</span> restera toujours <span class="code">.s12</span>,</p>
+      <p>une <span class="code">.l6</span>, prendra la taille max de son contenu si l'affichage passe sur du <span class="code">.m</span> ou plus petit.</p>
+    </div>
+  </div>
+  <div class="row section">
+    <div class="col s12 center-align">
+      <h5>Les tailles d'écrans :</h5>
+      <table class="centered bordered">
+        <thead>
+          <tr>
+              <th></th>
+              <th>extra small</th>
+              <th>small</th>
+              <th>medium</th>
+              <th>large</th>
+              <th>extra large</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>Bootstrap</b></td>
+            <td><p><span class="code">.col-xs</span></p><p><576px</p></td>
+            <td><p><span class="code">.col-sm</span></p><p>≥576px</p></td>
+            <td><p><span class="code">.col-md</span></p><p>≥768px</p></td>
+            <td><p><span class="code">.col-lg</span></p><p>≥992px</p></td>
+            <td><p><span class="code">.col-xl</span></p><p>≥1200px</p></td>
+          </tr>
+          <tr>
+            <td><b>Materialize</b></td>
+            <td>-</td>
+            <td><p><span class="code">.s</span></p><p><=600px</p></td>
+            <td><p><span class="code">.m</span></p><p>>600px</p></td>
+            <td><p><span class="code">.l</span></p><p>>992px</p></td>
+            <td><p><span class="code">.xl</span></p><p>>1200px</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row section">
+    <div class="col s12 center-align">
+      <h3>Les media queries</h3>
+    </div>
+    <div class="col s12">
+      <table>
+        <thead>
+          <tr>
+            <th>CSS</th>
+            <th>SASS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>.hide-on-small-only</td>
+            <td>@media #{$small-and-down} {...}</td>
+          </tr>
+          <tr>
+            <td>.hide-on-small-and-down</td>
+            <td>@media #{$medium-and-up} {...}</td>
+          </tr>
+          <tr>
+            <td>.hide-on-med-and-down</td>
+            <td>@media #{$medium-and-down} {...}</td>
+          </tr>
+          <tr>
+            <td>.hide-on-med-and-up</td>
+            <td>@media #{$large-and-up} {...}</td>
+          </tr>
+          <tr>
+            <td>.hide-on-med-only</td>
+            <td>@media #{$extra-large-and-up} {...}</td>
+          </tr>
+            <td>.hide-on-large-only</td>
+          </tr>
+          <tr>
+            <td>.show-on-large</td>
+          </tr>
+          <tr>
+            <td>.show-on-medium</td>
+          </tr>
+          <tr>
+            <td>.show-on-small</td>
+          </tr>
+            <td>.show-on-medium-and-up</td>
+          </tr>
+          <tr>
+            <td>.show-on-medium-and-down</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
